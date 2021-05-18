@@ -1,10 +1,8 @@
 .section__img{
     width: 100%;
-    max-width: 340px;
-    
+    max-width: 340px;  
 }
 #section1{
-    
     @media screen and (max-width: 576px){ 
         .section__img--center{
             max-width: 400px;
@@ -36,7 +34,9 @@
         }
     }
 }
+
 #section3{
+    
     @media screen and (max-width: 576px){   
         .section__img--center{
             max-width: 500px;
@@ -64,6 +64,7 @@
     } 
 }
 #section4{
+    
     .section__img{
         max-width: 200px;
     }
@@ -80,6 +81,7 @@
     }
 }
 #section5{
+    
     .section__img{
         max-width: 585px;
     }
@@ -97,6 +99,7 @@
     }
 }
 #section6{
+    
     .section__img{
         max-width: 585px;
     }
@@ -132,6 +135,7 @@
     }
 }
 #section7{
+    
     .section__img{
         max-width: 585px;
     }
@@ -147,6 +151,7 @@
     } 
 }
 #section8{
+    
     @media screen and (min-width: 576px){   
         .section__img{
             max-width: 500px;

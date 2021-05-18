@@ -1,11 +1,4 @@
-@media screen and (min-width: 375px){
-    .sec__title{
-        font-family: $BASKERVVILLE;
-        font-size: 40px;
-        line-height: 48px;
-        font-weight: 400;
-    }
-}
+
 @media screen and (min-width: 768px){
     .sec__title{
         font-family: $BASKERVVILLE;
@@ -22,7 +15,12 @@
         font-weight: 400;
     }
 }
-
+.sec__title{
+    font-family: $BASKERVVILLE;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 400;
+}
 .sec__sub__title{
     font-family: $BASKERVVILLE;
     font-size: 24px;

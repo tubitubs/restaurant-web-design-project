@@ -1,35 +1,42 @@
 // sections
+
 #section1{
-    margin-bottom: 50px;
+    padding-top: 128px;
+    margin-bottom: 144px;
 }
 #section2{
-    margin-bottom: 50px;
+    a{
+        color: $COLOR-WHITE;
+    }
+    margin-bottom: 139px;
     
 }
 #section3{
-    margin-bottom: 50px;
+    margin-bottom: 155px;  
+ 
 }
 #section4{
-    margin-bottom: 50px;
+    a{
+        color: $COLOR-WHITE;
+    }
+
 }
 #section5{
-    margin-bottom: 50px;
+    a{
+        color: $COLOR-WHITE;
+    }
+    margin-bottom: 176px;
 }
 #section6{
-    margin-bottom: 50px;
+    margin-bottom: 162px;
 }
 #section7{
-    margin-bottom: 50px;
+    margin-bottom: 137px;
 }
 #section8{
-    margin-bottom: 50px;
+    margin-bottom: 149px;;
 }
-#section9{
-    margin-bottom: 50px;
-}
-#section10{
-    margin-bottom: 50px;
-}
+
 #footer{
     background-color: $MAIN-COLOR ;
 }
