@@ -1,0 +1,81 @@
+@media screen and (min-width: 375px){
+    .sec__title{
+        font-family: $BASKERVVILLE;
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 400;
+    }
+}
+@media screen and (min-width: 768px){
+    .sec__title{
+        font-family: $BASKERVVILLE;
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 400;
+    }
+}
+@media screen and (min-width: 992px){
+    .sec__title{
+        font-family: $BASKERVVILLE;
+        font-size: 56px;
+        line-height: 64px;
+        font-weight: 400;
+    }
+}
+
+.sec__sub__title{
+    font-family: $BASKERVVILLE;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+}  
+.title__line{
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+  
+}
+.sec__price{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 400;
+}
+.sec__description{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+  
+}
+.sec__sub-title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.sec__description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.sec__description--xs{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  
+}
+.sec__btn{
+    font-size: 16px;
+    line-height: 20.83px;
+    font-weight: 700;
+  
+}
+
+.letter-sp-2{
+    letter-spacing:2px;
+}
+
+
+//text align
+.t-a-center{
+    text-align: center;
+}
