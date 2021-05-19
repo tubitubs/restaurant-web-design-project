@@ -1,0 +1,24 @@
+#footer{
+    padding-top: 75px;
+    background-color: $FOOTER-COLOR;
+    color: $COLOR-WHITE; 
+    a{
+        color: $COLOR-WHITE; 
+    }
+    .copy__right{
+        color: rgba($color: #c4bcbc, $alpha: 1.0);
+    }
+    .footer__line {
+        width: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+        background: $COLOR-WHITE;
+        height: 1px;
+      }
+      @media screen and (min-width: 1200px) {
+        .d-inline--xl{
+            display: inline-block;
+        }
+      }
+
+}

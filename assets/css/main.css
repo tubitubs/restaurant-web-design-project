@@ -202,7 +202,7 @@ a {
   font-weight: 700;
 }
 
-.title__line {
+.font-16x32 {
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
@@ -276,13 +276,13 @@ a {
   margin: 0 auto;
 }
 
-@media (min-width: 370px) {
+@media screen and (min-width: 370px) {
   .container {
     max-width: 470px;
   }
 }
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
   .container {
     max-width: 540px;
   }
@@ -571,11 +571,104 @@ a {
   }
 }
 
+#footer {
+  padding-top: 75px;
+  background-color: #1B262A;
+  color: #F9FDFF;
+}
+
+#footer a {
+  color: #F9FDFF;
+}
+
+#footer .copy__right {
+  color: #c4bcbc;
+}
+
+#footer .footer__line {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  background: #F9FDFF;
+  height: 1px;
+}
+
+@media screen and (min-width: 1200px) {
+  #footer .d-inline--xl {
+    display: inline-block;
+  }
+}
+
+#footer {
+  padding-top: 75px;
+  background-color: #1B262A;
+  color: #F9FDFF;
+}
+
+#footer a {
+  color: #F9FDFF;
+}
+
+#footer .copy__right {
+  color: #c4bcbc;
+}
+
+#footer .footer__line {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  background: #F9FDFF;
+  height: 1px;
+}
+
+@media screen and (min-width: 1200px) {
+  #footer .d-inline--xl {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .p-z-t-80x100 {
+    padding: 80px 100px !important;
+  }
+  .p-t-60 {
+    padding-top: 60px;
+  }
+  .d-none-xs {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .order-md-1 {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .order-md-2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
   .d-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .justify-c-c-md {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .justify-c-s-b-md {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .align-i-c-e-md {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .flex-d-r {
     -webkit-box-orient: horizontal !important;
@@ -583,7 +676,13 @@ a {
         -ms-flex-direction: row !important;
             flex-direction: row !important;
   }
-  .align-i {
+  .flex-d-c-md {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .align-i-md {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -597,30 +696,26 @@ a {
   .p-r-35 {
     padding-right: 35px;
   }
+  .d-none-md {
+    display: none !important;
+  }
+  .d-block-md {
+    display: block !important;
+  }
+  .max-w-200 {
+    max-width: 200px;
+  }
 }
 
 @media screen and (min-width: 992px) {
-  .d-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .flex-d-r {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
-  }
-  .align-i {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .p-z-t-80x100 {
     padding: 80px 100px !important;
   }
   .p-t-60 {
     padding-top: 60px;
+  }
+  .max-w-370 {
+    max-width: 370px;
   }
 }
 
@@ -630,7 +725,7 @@ a {
   }
 }
 
-.d-flex {
+.d-flex-m {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -784,6 +879,10 @@ a {
   padding-bottom: 90px;
 }
 
+.p-0 {
+  padding: 0;
+}
+
 .text-color-default {
   color: #F9FDFF;
 }
@@ -801,7 +900,7 @@ a {
 }
 
 .inner__card {
-  padding: 50px 48px;
+  padding: 50px 20px;
 }
 
 .bg-c-main {
@@ -827,32 +926,53 @@ a {
 }
 
 @media screen and (min-width: 576px) {
-  .section__card {
-    max-width: 585px;
+  #section2 .inner__card {
+    padding: 40px 26px !important;
+  }
+  #section2 .card-p-sm {
+    padding: 80px 90px !important;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .o-hidden {
+  #section2 .o-hidden {
     overflow: hidden;
   }
-  .section__card {
-    padding: 30px 40px;
+  #section2 .inner__card {
+    padding: 40px 26px !important;
   }
-  .inner__card {
-    padding: 28px 20px;
+  #section2 .card-p-md {
+    padding: 73px 40px !important;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .p-lg-80x100 {
-    padding: 20px 20px !important;
+  #section2 .inner__card {
+    padding: 38px 26px !important;
   }
-  .p-lg- {
-    padding: 80px 100px;
+  #section2 .card-p-lg {
+    padding: 85px 100px !important;
   }
-  .p-md-40x30 {
-    padding: 40px 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  #section2 .inner__card {
+    padding: 38px 26px !important;
+  }
+  #section2 .card-p-xl {
+    padding: 85px 130px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section__card {
+    padding: 70px 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section__card {
+    padding: 80px 100px !important;
   }
 }
 
@@ -947,9 +1067,6 @@ a {
   #section5 .section__img {
     max-width: 585px;
   }
-  #section5 .column-md-6 {
-    max-height: 250px;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -1012,6 +1129,12 @@ a {
   }
 }
 
+#section8 .image--border {
+  max-width: 170px;
+  max-height: 170px;
+  border-radius: 50%;
+}
+
 @media screen and (min-width: 576px) {
   #section8 .section__img {
     max-width: 500px;
@@ -1043,6 +1166,7 @@ a {
 .sec__btn {
   width: 100%;
   max-width: 170px;
+  max-height: 48px;
   padding: 1rem;
   border: 1px solid #567482;
   display: -webkit-box;
@@ -1053,6 +1177,10 @@ a {
           justify-content: center;
 }
 
+.bg-color--btn {
+  background-color: #567482;
+}
+
 .default-color--btn {
   border: 1px solid #F9FDFF;
 }
@@ -1061,8 +1189,17 @@ a {
   color: #567482;
 }
 
+.btn-color-white {
+  color: #F9FDFF;
+}
+
 .menu {
   width: 100%;
+}
+
+#d-d__menu {
+  width: 100%;
+  max-width: 329px;
 }
 
 #section1 {
@@ -1112,9 +1249,5 @@ a {
 
 #section9 {
   margin-bottom: 149px;
-}
-
-#footer {
-  background-color: #2B3A41;
 }
 /*# sourceMappingURL=main.css.map */

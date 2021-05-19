@@ -2,7 +2,7 @@
     padding: 80px 30px;
 }
 .inner__card{
-    padding: 50px 48px;
+    padding: 50px 20px;
 }
 .bg-c-main{
     background: $MAIN-COLOR;
@@ -22,36 +22,60 @@
     max-width: 200px;
     width: 100%;
 }
-
+#section2{
 @media screen and (min-width: 576px){   
-    .section__card{
-        max-width: 585px;
+    .inner__card{
+        padding: 40px 26px !important;
     }
-}
+
+    .card-p-sm{
+        padding: 80px 90px !important;
+    }
+}   
 
 @media screen and (min-width: 768px){   
     
     .o-hidden{
         overflow: hidden;
     }
-    .section__card{
-        padding: 30px 40px
-    }
+
     .inner__card{
-        padding: 28px 20px;
+        padding: 40px 26px !important;
     }
-   
+
+
+    .card-p-md{
+        padding: 73px 40px !important;
+    }
+
 } 
 @media screen and (min-width: 992px){   
-    .p-lg-80x100{
-        padding: 20px 20px !important;
+    .inner__card{
+        padding: 38px 26px !important;
     }
-    .p-lg-{
-        padding: 80px 100px;
-    }
-    .p-md-40x30{
-        padding: 40px 30px;
+    .card-p-lg{
+        padding: 85px 100px !important;
     }
 }
-  
+@media screen and (min-width: 1200px){   
 
+
+    .inner__card{
+        padding: 38px 26px !important;
+    }
+    .card-p-xl{
+        padding: 85px 130px !important;
+    }
+}
+}
+
+@media screen and (min-width: 768px){   
+    .section__card{
+        padding: 70px 40px;
+    }
+}
+@media screen and (min-width: 992px){   
+    .section__card{
+        padding: 80px 100px !important;
+    }
+}

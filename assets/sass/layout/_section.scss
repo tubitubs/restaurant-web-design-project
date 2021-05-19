@@ -34,8 +34,10 @@
         }
     }
 }
+
+
+
 #section3{
-    
     @media screen and (max-width: 576px){   
         .section__img--center{
             max-width: 500px;
@@ -89,9 +91,7 @@
         .section__img{
             max-width: 585px;
         }
-        .column-md-6{
-            max-height: 250px;
-        }
+
     }
     @media screen and (min-width: 992px){   
  
@@ -154,7 +154,11 @@
     } 
 }
 #section8{
-    
+    .image--border{
+        max-width: 170px;
+        max-height: 170px;
+        border-radius: 50%;
+    }
     @media screen and (min-width: 576px){   
         .section__img{
             max-width: 500px;

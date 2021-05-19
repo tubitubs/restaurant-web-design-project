@@ -1,8 +1,8 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  // overflow-y: hidden;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -17,12 +17,12 @@
   width: 100%;
   margin: 0 auto;
 }
-@media (min-width: 370px) {
+@media screen and (min-width: 370px) {
   .container {
     max-width: 470px;
   }
 }
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
   .container {
     max-width: 540px;
   }

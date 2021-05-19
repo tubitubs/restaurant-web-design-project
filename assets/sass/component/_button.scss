@@ -1,10 +1,15 @@
 .sec__btn{
    width: 100%;
    max-width: 170px;
+   max-height: 48px;
    padding: 1rem;
    border: 1px solid $BTN-COLOR; 
    display: flex;
    justify-content: center;
+ 
+}
+.bg-color--btn{
+    background-color: $BTN-COLOR;
 }
 .default-color--btn{
     border: 1px solid $COLOR-WHITE; 
@@ -12,7 +17,9 @@
 .btn-color{
     color: $BTN-COLOR;
 }    
-
+.btn-color-white{
+    color: $COLOR-WHITE;
+} 
 .menu{
     width: 100%;
 }
