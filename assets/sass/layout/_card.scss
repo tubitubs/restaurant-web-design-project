@@ -1,6 +1,6 @@
 .section__card{
-    max-width: 585px;
-    margin: 0 auto;
+    height: 100%;
+    padding: 75px 30px;
 }
 .bg-c-main{
     background: $MAIN-COLOR;
@@ -24,14 +24,31 @@
 @media screen and (min-width: 576px){   
     .section__card{
         max-width: 585px;
-        padding: 0;
     }
 }
 @media screen and (min-width: 768px){   
-    .section__card{
-        max-width: 585px;
-        
+    .section__card-md{
+        padding: 50px 30px !important;
     }
+    .p-z-50x40{
+        padding: 50px 40px;
+    }
+    .p-0{
+        padding: 0 !important;
+    }
+    .p-t-md-0{
+        padding-top: 0 !important;
+    }
+    .m-t-md-0{
+        padding-top: 0 !important;
+    }
+    .inner--card{
+        padding: 0px 20px;
+    }
+    .o-hidden{
+        overflow: hidden;
+    }
+
 } 
   
 

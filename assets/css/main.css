@@ -165,11 +165,15 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .sec__title {
-    font-family: "Baskervville", sans-serif;
-    font-size: 48px;
-    line-height: 56px;
+  .sec__price {
+    font-size: 32px;
+    line-height: 48px;
     font-weight: 400;
+  }
+  .sec__sub-title {
+    font-size: 20px !important;
+    font-weight: 700;
+    line-height: 32px;
   }
 }
 
@@ -179,6 +183,9 @@ a {
     font-size: 56px;
     line-height: 64px;
     font-weight: 400;
+  }
+  .sec__sub__title {
+    font-size: 20px !important;
   }
 }
 
@@ -295,7 +302,7 @@ a {
   margin-top: -30px;
 }
 
-.row .row {
+.row {
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -567,6 +574,9 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
+  .m-t-0 {
+    margin-top: 0 !important;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -585,6 +595,18 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .p-z-t-80x100 {
+    padding: 80px 100px !important;
+  }
+  .p-t-60 {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .d-xl-none {
+    display: none;
   }
 }
 
@@ -666,18 +688,16 @@ a {
   max-width: 270px;
 }
 
-@media screen and (min-width: 1200px) {
-  .d-xl-none {
-    display: none;
-  }
-}
-
 .p-z-40 {
   padding: 40px;
 }
 
 .p-z-48x48 {
   padding: 48px 48px;
+}
+
+.p-z-40x56 {
+  padding: 40px 56px;
 }
 
 .p-z-75x50 {
@@ -690,6 +710,10 @@ a {
 
 .p-z-t-80 {
   padding: 80px 0;
+}
+
+.p-z-t-80x24 {
+  padding: 80px 24px;
 }
 
 .title__line--padding-b {
@@ -720,6 +744,10 @@ a {
   padding-bottom: 48px;
 }
 
+.p-b-56 {
+  padding-bottom: 56px;
+}
+
 .p-b-60 {
   padding-bottom: 60px;
 }
@@ -745,8 +773,8 @@ a {
 }
 
 .section__card {
-  max-width: 585px;
-  margin: 0 auto;
+  height: 100%;
+  padding: 75px 30px;
 }
 
 .bg-c-main {
@@ -774,13 +802,30 @@ a {
 @media screen and (min-width: 576px) {
   .section__card {
     max-width: 585px;
-    padding: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .section__card {
-    max-width: 585px;
+  .section__card-md {
+    padding: 50px 30px !important;
+  }
+  .p-z-50x40 {
+    padding: 50px 40px;
+  }
+  .p-0 {
+    padding: 0 !important;
+  }
+  .p-t-md-0 {
+    padding-top: 0 !important;
+  }
+  .m-t-md-0 {
+    padding-top: 0 !important;
+  }
+  .inner--card {
+    padding: 0px 20px;
+  }
+  .o-hidden {
+    overflow: hidden;
   }
 }
 
@@ -820,6 +865,12 @@ a {
 @media screen and (min-width: 992px) {
   #section1 .section__img {
     max-width: 570px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #section2 .column-md-6 {
+    max-height: 384px;
   }
 }
 
@@ -871,15 +922,18 @@ a {
   max-width: 585px;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   #section5 .section__img {
     max-width: 585px;
   }
+  #section5 .column-md-6 {
+    max-height: 250px;
+  }
 }
 
-@media screen and (min-width: 768px) {
-  #section5 .section__img {
-    max-width: 585x;
+@media screen and (min-width: 992px) {
+  #section5 .column-md-6 {
+    max-height: 385px;
   }
 }
 
@@ -965,6 +1019,12 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  #section10 .column-md-6 {
+    max-height: 384px;
+  }
+}
+
 #section1 {
   padding-top: 128px;
   margin-bottom: 144px;
@@ -980,6 +1040,10 @@ a {
 
 #section3 {
   margin-bottom: 155px;
+}
+
+#section4 {
+  margin-bottom: 160px;
 }
 
 #section4 a {
