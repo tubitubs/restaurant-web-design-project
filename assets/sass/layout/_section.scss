@@ -34,13 +34,6 @@
         }
     }
 }
-#section2{
-    @media screen and (min-width: 768px){   
-        .column-md-6{
-            max-height: 384px;
-        }
-    }
-}
 #section3{
     
     @media screen and (max-width: 576px){   
@@ -191,8 +184,6 @@
 }
 #section10{    
     @media screen and (min-width: 768px){   
-        .column-md-6{
-            max-height: 384px;
-        };
+        
     }    
 }

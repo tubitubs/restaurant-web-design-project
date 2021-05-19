@@ -1,3 +1,5 @@
+
+
 //flex
 @media screen and (min-width: 768px){
     .d-flex{
@@ -12,6 +14,12 @@
     
     .m-t-0{
         margin-top: 0 !important;
+    }
+    .p-b-56{
+        padding-bottom: 32px !important;
+    }
+    .p-r-35{
+        padding-right: 35px;
     }
     
 }
@@ -38,6 +46,12 @@
      display: none;
     }
 }
+@media screen and (max-width: 576px){
+    .d-none-menu{
+     display: none !important;
+    }
+}
+
 .d-flex{
     display: flex;
 }
@@ -156,6 +170,9 @@
 }
 .max-w-170{
     max-width: 170px;
+}
+.m-t-0{
+    margin-top: 0;
 }
 
 //margin

@@ -167,13 +167,12 @@ a {
 @media screen and (min-width: 768px) {
   .sec__price {
     font-size: 32px;
-    line-height: 48px;
-    font-weight: 400;
   }
   .sec__sub-title {
     font-size: 20px !important;
-    font-weight: 700;
-    line-height: 32px;
+  }
+  .f-size-32 {
+    font-size: 32px !important;
   }
 }
 
@@ -577,6 +576,12 @@ a {
   .m-t-0 {
     margin-top: 0 !important;
   }
+  .p-b-56 {
+    padding-bottom: 32px !important;
+  }
+  .p-r-35 {
+    padding-right: 35px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -607,6 +612,12 @@ a {
 @media screen and (min-width: 1200px) {
   .d-xl-none {
     display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .d-none-menu {
+    display: none !important;
   }
 }
 
@@ -772,9 +783,16 @@ a {
   max-width: 170px;
 }
 
+.m-t-0 {
+  margin-top: 0;
+}
+
 .section__card {
-  height: 100%;
-  padding: 75px 30px;
+  padding: 80px 30px;
+}
+
+.inner__card {
+  padding: 50px 48px;
 }
 
 .bg-c-main {
@@ -806,26 +824,26 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .section__card-md {
-    padding: 50px 30px !important;
-  }
-  .p-z-50x40 {
-    padding: 50px 40px;
-  }
-  .p-0 {
-    padding: 0 !important;
-  }
-  .p-t-md-0 {
-    padding-top: 0 !important;
-  }
-  .m-t-md-0 {
-    padding-top: 0 !important;
-  }
-  .inner--card {
-    padding: 0px 20px;
-  }
   .o-hidden {
     overflow: hidden;
+  }
+  .section__card {
+    padding: 30px 40px;
+  }
+  .inner__card {
+    padding: 26px 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .p-lg-80x100 {
+    padding: 20px 20px !important;
+  }
+  .p-lg- {
+    padding: 80px 100px;
+  }
+  .p-md-40x30 {
+    padding: 40px 30px;
   }
 }
 
@@ -865,12 +883,6 @@ a {
 @media screen and (min-width: 992px) {
   #section1 .section__img {
     max-width: 570px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #section2 .column-md-6 {
-    max-height: 384px;
   }
 }
 
@@ -1019,10 +1031,30 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
-  #section10 .column-md-6 {
-    max-height: 384px;
-  }
+.sec__btn {
+  width: 100%;
+  max-width: 170px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  border: 1px solid #567482;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.default-color--btn {
+  border: 1px solid #F9FDFF;
+}
+
+.btn-color {
+  color: #567482;
+}
+
+.menu {
+  width: 100%;
 }
 
 #section1 {
@@ -1067,6 +1099,10 @@ a {
 }
 
 #section8 {
+  margin-bottom: 149px;
+}
+
+#section9 {
   margin-bottom: 149px;
 }
 

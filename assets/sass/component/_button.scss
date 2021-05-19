@@ -1,9 +1,19 @@
-// .sec__btn{
-//    width: 100%;
-//    max-width: 170px;
-//    padding-top: 14px;
-//    padding-bottom: 13px;
-//    border: 1px solid #F0F0F0; 
-//    display: flex;
-//    justify-content: center;
-// }
+.sec__btn{
+   width: 100%;
+   max-width: 170px;
+   padding-top: 14px;
+   padding-bottom: 13px;
+   border: 1px solid $BTN-COLOR; 
+   display: flex;
+   justify-content: center;
+}
+.default-color--btn{
+    border: 1px solid $COLOR-WHITE; 
+}
+.btn-color{
+    color: $BTN-COLOR;
+}    
+
+.menu{
+    width: 100%;
+}
