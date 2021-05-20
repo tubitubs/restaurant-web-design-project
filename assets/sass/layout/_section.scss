@@ -2,6 +2,14 @@
     width: 100%;
     max-width: 340px;  
 }
+.section3__rel{
+    position: relative;
+}
+.small__img{
+    position: absolute;
+    right: 32px;
+    bottom: 24px;
+}
 #section1{
     @media screen and (max-width: 576px){ 
         .section__img--center{
@@ -25,12 +33,12 @@
     }
     @media screen and (min-width: 768px){   
         .section__img{
-            max-width: 450px;
+            max-width: 500px;
         }
     } 
     @media screen and (min-width: 992px){   
         .section__img{
-            max-width: 570px;
+            max-width: 606px;
         }
     }
 }
@@ -47,6 +55,7 @@
         .section__img{
             max-width: 540px;
         } 
+        
     }
     @media screen and (min-width: 576px){   
         .section__img--center{

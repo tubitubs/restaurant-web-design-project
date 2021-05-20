@@ -9,6 +9,10 @@
     .f-size-32{
         font-size: 32px !important;
     }  
+    .hero-title-md{
+        font-size: 90px;
+        line-height: 70px;
+    }
 }
 @media screen and (min-width: 992px){
     .sec__title{
@@ -20,7 +24,12 @@
     .sec__sub__title{
         font-size: 20px !important;
     } 
+    .hero-title-lg{
+        font-size: 100px !important;
+        line-height: 80px !important;
+    }
 }
+
 .hero__title{
     font-family: $BASKERVVILLE;
     font-size: 72px;

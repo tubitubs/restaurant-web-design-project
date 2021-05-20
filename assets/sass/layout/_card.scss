@@ -45,7 +45,7 @@
 
 
     .card-p-md{
-        padding: 73px 40px !important;
+        padding: 58px 40px !important;
     }
 
 } 
@@ -54,7 +54,11 @@
         padding: 38px 26px !important;
     }
     .card-p-lg{
-        padding: 85px 100px !important;
+        padding: 70px 100px !important;
+    }
+    .section5__img{
+        max-height: 567px;
+        overflow: hidden;
     }
 }
 @media screen and (min-width: 1200px){   
@@ -64,7 +68,17 @@
         padding: 38px 26px !important;
     }
     .card-p-xl{
-        padding: 85px 130px !important;
+        padding: 70px 130px !important;
+    }
+}
+@media screen and (min-width: 1370px){   
+
+
+    .inner__card{
+        padding: 38px 26px !important;
+    }
+    .card-p-xl{
+        padding: 70px 150px !important;
     }
 }
 }

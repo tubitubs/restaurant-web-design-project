@@ -1,87 +1,91 @@
-#hero {
+
+#hero{
+    p{
+        color: $COLOR-WHITE;
+    }
+    h1{
+        color: $COLOR-WHITE;
+    }
+
     background-color: $MAIN-COLOR;
-    .hero__container {
-      margin: 0 auto !important;
-      width: 100%;
-      max-width: 1440px;
+    .hero__container{
+        max-width: 1440px;
+        width: 100%;
     }
-    .right-column{
-        position: relative;
+    .right__column{
+        width: 100%;
         max-width: 500px;
+        max-height: 100vh;
+        position: relative;
     }
-    .hero__img {
-      width: 100%;  
-      max-width: 500px;
-      max-height: 100vh;
+    .hero__img{
+        width: 100%;
+        max-width: 500px;
+        height: 1000px;
+        max-height: 100vh;
     }
     .hero__play__btn{
         position: absolute;
-        left: 50%;
         top: 50%;
-        z-index: 999;
+        left: 50%;
     }
-  }
+    .hero--center{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+
 @media screen and (min-width: 576px) {
-    #hero {
-        .right-column{
-            position: relative;
-            max-width: 700px;
-        }
-        .hero__img {
-          width: 100%;
-          max-width: 700px;
-          max-height: 100vh;
-        }
-        .hero__play__btn{
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            z-index: 999;
-        }
-        
-      }
+ 
 }
 
 
 @media screen and (min-width: 768px) {
-    .hero-md-img {
+    .right__column{
         width: 100%;
-        max-width: 570px;
+        max-height: 100vh;
+        max-width: 500px;
+        height: 100%;
+        position: relative;
     }
-    .margin-auto-md{
-        margin: 0 auto !important;
+    .hero__img{
+        width: 100%;
+        height: 100%;
+        max-width: 500px;
+        max-height: 100vh;
     }
-    .max-w-md-400{
-        max-width: 400px;
+    .hero__play__btn{
+        position: absolute;
+        top: 50%;
+        left: 50%; 
     }
-    .font-md{
-        font-size: 90px;
-        line-height: 70px;
+    .left__column{
+        padding-left:60px;
+        padding-top: 80px;
     }
+
 
 }
 @media screen and (min-width: 992px) {
-    #hero{
-        .hero__img{
-            width: 100%;
-            height: 100vh;
-        }
-        .right__column{
-            position: relative;
-        }
-        .hero__play__btn{
-            position: absolute;
-            bottom: 50%;
-            left: 50%;
-            z-index: 999;
-        }
-        .max-w-lg-472{
-            max-width: 472px;
-        }
-        .font-lg{
-            font-size: 100px;
-            line-height: 80px;
-        }
+    .left__column{
+        padding-left:90px;
+    }
+    .right__column{
+        width: 100%;
+        max-width: 800px;
+        height: 100vh;
+        position: relative;
+    }
+    .hero__img{
+        width: 100%;
+        height: 100%;
+        max-width: 800px;
+        max-height: 100vh;
+    }
+    .left__column{
+        padding-top: 162px;
     }
 
+
+}
 }
