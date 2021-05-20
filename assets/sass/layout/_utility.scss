@@ -50,6 +50,7 @@
     .p-r-35{
         padding-right: 35px;
     }   
+   
     .d-none-md{
         display: none !important;
     }
@@ -69,6 +70,13 @@
     }
     .max-w-370{
         max-width: 370px;
+    }
+    
+    .p-r-lg-0{
+        padding-right: 0;
+    }
+    .p-l-lg-100{
+        padding-left: 100px;
     }
     
 }
@@ -189,17 +197,17 @@
     padding-bottom: 90px;
 }
 .p-0{
-    padding:0 ;
+    padding: 0 ;
 }
 .text-color-default{
     color: $COLOR-WHITE;
-}
-.max-w-170{
-    max-width: 170px;
 }
 
 
 //margin
 .m-t-0{
     margin-top: 0;
+}
+.m-0{
+    margin: 0;
 }

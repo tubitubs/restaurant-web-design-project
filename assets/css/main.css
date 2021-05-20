@@ -188,6 +188,13 @@ a {
   }
 }
 
+.hero__title {
+  font-family: "Baskervville", sans-serif;
+  font-size: 72px;
+  line-height: 60px;
+  font-weight: 400px;
+}
+
 .sec__title {
   font-family: "Baskervville", sans-serif;
   font-size: 40px;
@@ -627,6 +634,92 @@ a {
   }
 }
 
+#hero {
+  background-color: #2B3A41;
+}
+
+#hero .hero__container {
+  margin: 0 auto !important;
+  width: 100%;
+  max-width: 1440px;
+}
+
+#hero .right-column {
+  position: relative;
+  max-width: 500px;
+}
+
+#hero .hero__img {
+  width: 100%;
+  max-width: 500px;
+  max-height: 100vh;
+}
+
+#hero .hero__play__btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+}
+
+@media screen and (min-width: 576px) {
+  #hero .right-column {
+    position: relative;
+    max-width: 700px;
+  }
+  #hero .hero__img {
+    width: 100%;
+    max-width: 700px;
+    max-height: 100vh;
+  }
+  #hero .hero__play__btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 999;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-md-img {
+    width: 100%;
+    max-width: 570px;
+  }
+  .margin-auto-md {
+    margin: 0 auto !important;
+  }
+  .max-w-md-400 {
+    max-width: 400px;
+  }
+  .font-md {
+    font-size: 90px;
+    line-height: 70px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #hero .hero__img {
+    width: 100%;
+    height: 100vh;
+  }
+  #hero .right__column {
+    position: relative;
+  }
+  #hero .hero__play__btn {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    z-index: 999;
+  }
+  #hero .max-w-lg-472 {
+    max-width: 472px;
+  }
+  #hero .font-lg {
+    font-size: 100px;
+    line-height: 80px;
+  }
+}
+
 @media screen and (min-width: 375px) {
   .p-z-t-80x100 {
     padding: 80px 100px !important;
@@ -716,6 +809,12 @@ a {
   }
   .max-w-370 {
     max-width: 370px;
+  }
+  .p-r-lg-0 {
+    padding-right: 0;
+  }
+  .p-l-lg-100 {
+    padding-left: 100px;
   }
 }
 
@@ -887,12 +986,12 @@ a {
   color: #F9FDFF;
 }
 
-.max-w-170 {
-  max-width: 170px;
-}
-
 .m-t-0 {
   margin-top: 0;
+}
+
+.m-0 {
+  margin: 0;
 }
 
 .section__card {

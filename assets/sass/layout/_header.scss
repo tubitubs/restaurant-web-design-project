@@ -1,0 +1,87 @@
+#hero {
+    background-color: $MAIN-COLOR;
+    .hero__container {
+      margin: 0 auto !important;
+      width: 100%;
+      max-width: 1440px;
+    }
+    .right-column{
+        position: relative;
+        max-width: 500px;
+    }
+    .hero__img {
+      width: 100%;  
+      max-width: 500px;
+      max-height: 100vh;
+    }
+    .hero__play__btn{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 999;
+    }
+  }
+@media screen and (min-width: 576px) {
+    #hero {
+        .right-column{
+            position: relative;
+            max-width: 700px;
+        }
+        .hero__img {
+          width: 100%;
+          max-width: 700px;
+          max-height: 100vh;
+        }
+        .hero__play__btn{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 999;
+        }
+        
+      }
+}
+
+
+@media screen and (min-width: 768px) {
+    .hero-md-img {
+        width: 100%;
+        max-width: 570px;
+    }
+    .margin-auto-md{
+        margin: 0 auto !important;
+    }
+    .max-w-md-400{
+        max-width: 400px;
+    }
+    .font-md{
+        font-size: 90px;
+        line-height: 70px;
+    }
+
+}
+@media screen and (min-width: 992px) {
+    #hero{
+        .hero__img{
+            width: 100%;
+            height: 100vh;
+        }
+        .right__column{
+            position: relative;
+        }
+        .hero__play__btn{
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            z-index: 999;
+        }
+        .max-w-lg-472{
+            max-width: 472px;
+        }
+        .font-lg{
+            font-size: 100px;
+            line-height: 80px;
+        }
+    }
+
+}
