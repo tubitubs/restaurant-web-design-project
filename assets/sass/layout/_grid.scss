@@ -3,6 +3,7 @@
   margin: 0 auto;
 }
 
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -46,11 +47,6 @@
   }
 }
 
-@media screen and (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  }
-}
 
 .row {
   display: flex;

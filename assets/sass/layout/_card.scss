@@ -1,95 +1,100 @@
-.section__card{
-    padding: 80px 30px;
+.section__card {
+  max-width: 375;
+  padding: 75px 50px;
 }
-.inner__card{
-    padding: 50px 20px;
+.img_circle {
+  object-fit: cover;
+  border-radius: 50%;
 }
-.bg-c-main{
-    background: $MAIN-COLOR;
+.section__img--rel {
+  position: relative;
 }
-.card-color-main{
-    background-color: $MAIN-COLOR;
+.inner__card {
+  position: absolute;
+  bottom: 90px;
+  right: 20px;
 }
-.card-color-secondary{
-    background: $INNER-CARD-COLOR;
-    margin-top: 0 !important;
+@media screen and (min-width: 768px) {
+  .section__card {
+    padding: 50px 50px !important;
+  }
+  .right__card {
+    padding: 53px 50px !important;
+  }
 }
-.color-card-default{
-    background: $COLOR-WHITE;
+@media screen and (min-width: 992px) {
+  .section__card {
+    padding: 60px 80px !important;
+  }
+  .right__card {
+    padding: 66px 80px !important;
+  }
 }
+@media screen and (min-width: 1200px) {
+  .section__card {
+    padding: 80px 100px !important;
+    height: 100%;
+  }
+  .right__card {
+    padding: 110px 100px !important;
+  }
 
-.img-mx-200{
-    max-width: 200px;
-    width: 100%;
 }
-#section2{
-@media screen and (min-width: 576px){   
-    .inner__card{
-        padding: 40px 26px !important;
-    }
+@media screen and (min-width: 1400px) {
+  .section__card {
+    padding: 110px 100px !important;
+  }
+  .left__card {
+    padding: 88px 100px !important;
+  }
+  .right__card {
+    padding: 118px 100px !important;
+  }
 
-    .card-p-sm{
-        padding: 80px 90px !important;
-    }
-}   
-
-@media screen and (min-width: 768px){   
-    
-    .o-hidden{
-        overflow: hidden;
-    }
-
-    .inner__card{
-        padding: 40px 26px !important;
-    }
-
-
-    .card-p-md{
-        padding: 58px 40px !important;
-    }
-
-} 
-@media screen and (min-width: 992px){   
-    .inner__card{
-        padding: 38px 26px !important;
-    }
-    .card-p-lg{
-        padding: 70px 100px !important;
-    }
-    .section5__img{
-        max-height: 567px;
-        overflow: hidden;
-    }
-}
-@media screen and (min-width: 1200px){   
-
-
-    .inner__card{
-        padding: 38px 26px !important;
-    }
-    .card-p-xl{
-        padding: 70px 130px !important;
-    }
-}
-@media screen and (min-width: 1370px){   
-
-
-    .inner__card{
-        padding: 38px 26px !important;
-    }
-    .card-p-xl{
-        padding: 70px 150px !important;
-    }
-}
 }
 
-@media screen and (min-width: 768px){   
-    .section__card{
-        padding: 70px 40px;
+#section2 {
+  .inner__card {
+    color: #333333;
+    background-color: #ffff;
+    padding: 50px 40px;
+  }
+  @media screen and (min-width: 576px) {
+    .inner__card {
+      color: #333333;
+      background-color: #ffff;
+      padding: 60px 90px;
     }
+  }
+  @media screen and (min-width: 768px) {
+    .inner__card {
+      color: #333333;
+      background-color: #ffff;
+      padding: 35px 45px;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .inner__card {
+      color: #333333;
+      background-color: #ffff;
+      padding: 36px 60px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .inner__card {
+      color: #333333;
+      background-color: #ffff;
+      padding: 36.5px 60px;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    .inner__card {
+      color: #333333;
+      background-color: #ffff;
+      padding: 36.5px 60px;
+    }
+  }
 }
-@media screen and (min-width: 992px){   
-    .section__card{
-        padding: 80px 100px !important;
-    }
+.m {
+  padding-left: 30px;
 }

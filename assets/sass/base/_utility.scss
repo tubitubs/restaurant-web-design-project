@@ -1,0 +1,18 @@
+
+.bg-c-main{
+    background: $MAIN-COLOR;
+}
+.card-color-main{
+    background-color: $MAIN-COLOR;
+}
+.card-color-secondary{
+    background: $INNER-CARD-COLOR;
+    margin-top: 0 !important;
+}
+.color-card-default{
+    background: $COLOR-WHITE;
+}
+
+.p-z{
+    padding: 40px;
+}

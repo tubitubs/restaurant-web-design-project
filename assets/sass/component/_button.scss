@@ -1,31 +1,60 @@
-.sec__btn{
+
+.hero__btn{
+    background: $FOURTH-COLOR;
+    padding: 14px 38px;
+    color: $COLOR-WHITE;
+    max-width: 150px;
+}
+.btn--1{
+   background-color: $MAIN-COLOR; 
    width: 100%;
-   max-width: 170px;
-   max-height: 48px;
-   padding: 1rem;
+   max-width: 150px;
+   padding: 14px;
    border: 1px solid $BTN-COLOR; 
    display: flex;
    justify-content: center;
- 
-}
-.bg-color--btn{
-    background-color: $BTN-COLOR;
-}
-.default-color--btn{
-    border: 1px solid $COLOR-WHITE; 
+   align-items: center;
+    a{
+        color: $COLOR-WHITE;
+    }
+}  
+.btn--2{
+    width: 100%;
+   max-width: 170px;
+   padding: 14px;
+   border: 1px solid $FOURTH-COLOR; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
 }
 .btn-color{
-    color: $BTN-COLOR;
-}    
-.btn-color-white{
-    color: $COLOR-WHITE;
-} 
-.menu{
-    width: 100%;
+    color: $MAIN-COLOR;
 }
-.bg-small-img{
-    background: $MAIN-COLOR;
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
+.btn--main--border{
+   background-color: $COLOR-WHITE; 
+   width: 100%;
+   max-width: 150px;
+   padding: 14px;
+   border: 1px solid $BTN-COLOR; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    a{
+    color: $MAIN-COLOR;
+    }
+}
+.btn--white--border{
+    background-color: $MAIN-COLOR; 
+   width: 100%;
+   max-width: 150px;
+   padding: 14px;
+   border: 1px solid white; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    a{
+        color: $COLOR-WHITE;
+    }
+
 }
