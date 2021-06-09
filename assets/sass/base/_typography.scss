@@ -7,7 +7,11 @@
 .text-color--white {
   color: #ffff !important;
 }
-
+.b{
+  font-style: italic;
+  font-size: 72px !important;
+  font-size: 60px !important;
+}
 .font-dm--sans {
   font-family: $DMSANS !important;
 }
@@ -31,8 +35,8 @@
     min-height: 237px;
   }
   .hero__title-md{
-    font-style: italic;
-    font-size: 80px !important;
+    font-size: 102px !important;
+    line-height: 80px !important;
   }
   .sec__sub__title-sec4-md {
     font-size: 24px !important;
@@ -55,8 +59,8 @@
 }
 @media screen and (min-width: 992px) {
   .hero__title-lg{
-    font-size: 90px !important;
-
+    font-size: 102px !important;
+    line-height: 80px !important;
   }
   .sec__title-lg {
     font-size: 48px !important;
@@ -77,6 +81,7 @@
     line-height: 32px !important;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .hero__title-xl{
     font-size: 102px !important;
@@ -91,7 +96,7 @@
 .hero__title{
   font-style: italic;
   font-size: 76px;
-  line-height: 80px;
+  line-height: 60px;
   font-weight: 400;
   font-family: $BASKERVVILLE;
 }

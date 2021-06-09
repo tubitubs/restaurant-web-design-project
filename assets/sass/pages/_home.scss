@@ -7,10 +7,10 @@ a{
 }
 
 #header{
-    position: relative;
+   position: fixed;
     .nav{
-    position: absolute;
-    top: 40px;
+   
+    width: 100%;    
     }
     .nav__btn{
         justify-content: flex-end;
@@ -34,27 +34,35 @@ a{
 }
 #hero{
     position: relative;
-    .title__line{
-        padding-top: 140px;
-    }
     .p-b-40{
         padding-bottom: 40px;
     }
+    
+    @media screen and (max-width: 767px) {
+        .title__line{
+            margin-top: 90px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .title__line{
+            margin-top: 100px;
+        }
+    }
 }
-#left__half{
+#right__half{
     content: "";
     background: url("/assets/img/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 420px;
+    top: 480px;
     width: 100%;
     position: absolute;
-    top: 450px;
     right: 0px;
     z-index: -1;
 }
-#right__half{
-    height: 100vh;
+#left__half{
+    min-height: 480px;
     content: "";
     width: 100%;
     position: absolute;
@@ -62,21 +70,44 @@ a{
     z-index: -1;
     background-color: $MAIN-COLOR;
 }
-@media screen and (min-width: 992px) {
-    #left__half{
+@media screen and (min-width: 768px) {
+    #right__half{
         content: "";
         background: url("/assets/img/hero.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        min-height: 100vh;
+        min-height: 540px;
+        top: 540px;
+        width: 100%;
+        position: absolute;
+        right: 0px;
+        z-index: -1;
+    }
+    #left__half{
+        min-height: 480px;
+        content: "";
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        z-index: -1;
+        background-color: $MAIN-COLOR;
+    }
+}
+@media screen and (min-width: 992px) {
+    #right__half{
+        content: "";
+        background: url("/assets/img/hero.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
         width: 50%;
         position: absolute;
         top: 0px;
         right: 0px;
         z-index: -1;
     }
-    #right__half{
-        min-height: 100vh;
+    #left__half{
+        height: 100vh;
         content: "";
         width: 50%;
         position: absolute;

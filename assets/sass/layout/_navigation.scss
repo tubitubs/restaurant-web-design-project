@@ -1,0 +1,28 @@
+
+#header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    .nav{
+        padding-top: 50px;
+    }
+    .nav__btn{
+        justify-content: flex-end;
+    }
+    .nav__list{
+        display: flex;
+        align-items: center;
+    }
+    @media screen and (min-width: 768px) {
+        li{
+            padding: 0  30px !important;
+        } 
+    }
+    .nav__links{
+        display: flex;
+        align-items: center;
+        li{
+           display: inline-block;
+        }
+    }    
+}
