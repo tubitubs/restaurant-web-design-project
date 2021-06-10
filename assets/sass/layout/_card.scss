@@ -38,7 +38,6 @@
   .right__card {
     padding: 110px 100px !important;
   }
-
 }
 @media screen and (min-width: 1400px) {
   .section__card {
@@ -50,7 +49,6 @@
   .right__card {
     padding: 118px 100px !important;
   }
-
 }
 
 #section2 {
@@ -97,4 +95,9 @@
 }
 .m {
   padding-left: 30px;
+}
+#section8{
+  .section__card{
+    padding: 48px !important;
+  }
 }

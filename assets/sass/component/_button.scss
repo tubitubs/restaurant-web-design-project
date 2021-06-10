@@ -5,29 +5,165 @@
     color: $COLOR-WHITE;
     max-width: 150px;
 }
+span-w{
+    width: 100%;
+    max-width: 150px;
+  
+}
 .btn--1{
+   text-transform: uppercase; 
    background-color: $MAIN-COLOR; 
    width: 100%;
    max-width: 150px;
    padding: 14px;
-   border: 1px solid $BTN-COLOR; 
+   border: 1px solid ; 
    display: flex;
    justify-content: center;
    align-items: center;
-    a{
-        color: $COLOR-WHITE;
-    }
+    span {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        color: white;
+      }
+      
+      span:before, span :after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        top: 50%;
+        margin-top: -0.5px;
+        background: #fff;
+      }
+      
+  
+      span:after {
+        right: 2.5px;
+        background: #fff;
+        transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+      
+      span:hover:before {
+        background: #fff;
+        width: 100%;
+        transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+      
+      span:hover:after {
+        background: transparent;
+        width: 100%;
+        transition: 0s;
+      }
 }  
+
+
+
 .btn--2{
+    text-transform: uppercase; 
+    background-color: $FOURTH-COLOR; 
     width: 100%;
-   max-width: 170px;
-   padding: 14px;
-   border: 1px solid $FOURTH-COLOR; 
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    max-width: 150px !important;
+    padding: 14px;
+    border: 1px solid ; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     span{
+         
+         position: relative;
+         display: block;
+         cursor: pointer;
+         color: white;
+       }
+       
+       span:before, span:after {
+         content: '';
+         position: absolute;
+         width: 0%;
+         height: 3px;
+         top: 50%;
+         margin-top: -0.5px;
+         background: #fff;
+       }
+       
+       span:before {
+         left: 0;
+       }
+       span:after {
+         right: 2.5px;
+         background: #fff;
+         transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+       }
+       
+       span:hover:before {
+         background: #fff;
+         width: 100%;
+         transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+       }
+       
+       span:hover:after {
+         background: transparent;
+         width: 100%;
+         transition: 0s;
+       }
+ }  
+
+ .btn--3{
+    text-transform: uppercase; 
+    background-color: $MAIN-COLOR; 
+    width: 100%;
+    max-width: 150px;
+    padding: 14px;
+    border: 1px solid ; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     span {
+         position: relative;
+         display: block;
+         cursor: pointer;
+         color: white;
+       }
+       
+       span:before, span :after {
+         content: '';
+         position: absolute;
+         width: 0%;
+         height: 3px;
+         top: 50%;
+         margin-top: -0.5px;
+         background: #fff;
+       }
+       
    
-}
+       span:after {
+         right: 2.5px;
+         background: #fff;
+         transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+       }
+       
+       span:hover:before {
+         background: #fff;
+         width: 100%;
+         transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+       }
+       
+       span:hover:after {
+         background: transparent;
+         width: 100%;
+         transition: 0s;
+       }
+ }  
+ 
+
+
+  
+ 
+
+
+
+
 .btn-color{
     color: $MAIN-COLOR;
 }

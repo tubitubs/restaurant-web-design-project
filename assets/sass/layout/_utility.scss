@@ -1,3 +1,19 @@
+.btn--l-w-f{
+    width: 100%;
+    max-width: 4em;
+}
+.btn--m-w-f{
+    width: 100%;
+    max-width: 3em;
+}
+.btn--s-w-f{
+    width: 100%;
+    max-width: 2.5em;
+}
+.btn--2-w{
+    width: 100%;
+    max-width: 150px;
+}
 .p-0{
  padding: 0;
 }
@@ -49,7 +65,11 @@
 .m-l-t{
     padding-left: 40px;
 }
-
+@media screen and (max-width: 768px){ 
+    .d-none-nav{
+        display: none;
+    }
+}    
 @media screen and (min-width: 768px){  
     .m-l-md{
         margin-left: 40px;

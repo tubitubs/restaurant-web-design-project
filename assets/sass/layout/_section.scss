@@ -65,12 +65,25 @@
 }
 @media screen and (min-width: 768px) {
   .sec__title-max-w {
-    max-width: 460px !important;
+    max-width: 500px !important;
   }
 }
-
+@media screen and (max-width: 992px) {
+  #section1{
+    margin-top: 600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #section1{
+    margin-top: 420px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #section1{
+    margin-top: 148px;
+  }
+}
 #section1{
-  margin-top: 800px;
   .row{
     background: $COLOR-WHITE;
   }
@@ -180,8 +193,15 @@
   }
   .sec3__img{
     position: absolute;
-    bottom: 50px;
-    left: 265px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    top: 208px;
+    right: 32px;
+    background-color: $MAIN-COLOR;
+    width: 96px;
+    height: 96px;
   }
   margin-bottom: 150px;
   .sec__img {
@@ -275,11 +295,12 @@
 }
 
 #section5 {
+  
   margin-bottom: 200px;
-  ;
+  
   .section__img {
     max-width: 700px;
-    min-height: 384px;
+    min-height: 84px;
   }
   @media screen and (min-width: 768px) {
     .section__img {
@@ -289,6 +310,9 @@
   @media screen and (min-width: 992px) {
     .section__img {
       min-height: 338.5px !important;
+    }
+    .sec__title-l-h{
+      line-height: 64px !important;
     }
   }
   @media screen and (min-width: 1200px) {
@@ -379,6 +403,43 @@
   }
 }
 #section9 {
+  a {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    color:$MAIN-COLOR;
+  }
+  
+ a:before, a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #fff;
+  }
+  
+ a:before {
+    left: -2.5px;
+  }
+ a:after {
+    right: 2.5px;
+    background: #fff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+ a:hover:before {
+    background: #fff;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+ a:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
   margin-bottom: 200px;
   .section__img {
     margin-bottom: 26px;

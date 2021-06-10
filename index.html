@@ -7,17 +7,22 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Baskervville&family=DM+Sans:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <html>
     <body>
-      <header id="header">
-        <nav class="navigation">
+      <header id="header" class="d-none-nav">
+        <nav id="navbar" class="navigation">
           <div class="container">
-            <div class="nav d-flex justify-c-sb">
+            <div id="navbar" class="nav d-flex justify-c-sb">
               <ul class="nav__list">
                 <li>
                   <a href="#" class="nav__links"
@@ -29,8 +34,12 @@
                 <li><a href="#" class="nav__links">Blog</a></li>
                 <li><a href="#" class="nav__links">Contact</a></li>
               </ul>
-              <div class="nav__btn btn--white--border">
-                <a href="" class="nav__links">Appointment</a>
+              <div>
+                <a href="#">
+                  <div class="btn--1 nav__links">
+                    <span>About Us</span>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -45,7 +54,7 @@
               <div class="d-flex p-0 align-item-c h-50-md h-100-lg">
                 <div class="text-color--white">
                   <p class="title__line title__line--white">Restaurant</p>
-                  <h2
+                  <h1
                     class="
                       hero__title hero__title-md hero__title-lg hero__title-xl
                       max-w
@@ -53,10 +62,12 @@
                     "
                   >
                     Top Service Cuisine
-                  </h2>
-                  <div class="hero__btn d-flex-md">
-                    <a href="">See Menu</a>
-                  </div>
+                  </h1>
+                  <a href="#" class="btn--2-w">
+                    <div class="btn--2">
+                      <span class="">See Menu</span>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -68,8 +79,13 @@
       <section id="section1">
         <div class="container">
           <div class="row">
-            <div class="column column-md-6">
-              <div class="sec--img--center">
+            <div
+              class="column column-md-6"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
+              <div>
                 <img
                   src="./assets/img/sec1__pic.png"
                   alt=""
@@ -77,10 +93,10 @@
                 />
               </div>
             </div>
-            <div class="column column-md-6">
+            <div class="column column-md-6" data-aos="fade-left">
               <div class="p-l-xl">
                 <h3 class="title__line title__line-xl-75">About</h3>
-                <h2 class="sec__title sec__title-max-w sec__title-lg">
+                <h2 class="sec__title sec__title-max-w sec__title-lg sec-lh">
                   Making The Delicious Food
                 </h2>
                 <p class="sec__description text-color--semi--dark letter-sp-2">
@@ -88,8 +104,12 @@
                   the Semantics, a large language. Separated they live in
                   Bookmarksgrove right at the coast.
                 </p>
-                <div class="sec__btn btn--1">
-                  <a href="#"><p class="">About Us</p> </a>
+                <div>
+                  <a href="#">
+                    <div class="btn--1 nav__links">
+                      <span>About Us</span>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -138,9 +158,9 @@
         <div class="container">
           <div class="row">
             <div class="column">
-              <div class="">
+              <div data-aos="fade-right">
                 <h3 class="title__line">Features</h3>
-                <h2 class="sec__title sec__title-max-w sec__title-lg">
+                <h2 class="sec__title sec__title-max-w sec__title-lg sec-lh">
                   First-Class Dining Experience
                 </h2>
               </div>
@@ -148,7 +168,7 @@
           </div>
           <div class="row">
             <div class="column column-md-6 column-lg-4">
-              <div class="sec3__rel sec--img--center">
+              <div class="sec3__rel" data-aos="fade-up-right">
                 <img
                   src="./assets/img/fresh-ingredients.jpg"
                   alt=""
@@ -158,7 +178,7 @@
                   <img src="./assets/img/fish.png" alt="" class="" />
                 </div>
               </div>
-              <div>
+              <div data-aos="fade-right">
                 <p class="sec__sub-title">Fresh Ingredients</p>
                 <p class="sec__description text-color--semi--dark">
                   The copy warned the Little Blind Text, that where it came from
@@ -167,17 +187,17 @@
               </div>
             </div>
             <div class="column column-md-6 column-lg-4">
-              <div class="sec--img--center">
+              <div class="sec3__rel" data-aos="fade-up" data-aos-duration="900">
                 <img
                   src="./assets/img/fast-service.jpg"
                   alt=""
                   class="section__img m-b-40"
                 />
-                <div class="">
+                <div class="sec3__img">
                   <img src="./assets/img/service.png" alt="" class="" />
                 </div>
               </div>
-              <div>
+              <div data-aos="fade-up" data-aos-duration="900">
                 <p class="sec__sub-title">Fast Service</p>
                 <p class="sec__description text-color--semi--dark">
                   Copy warned the Little Blind Text, that where it came from it
@@ -187,17 +207,17 @@
             </div>
 
             <div class="column column-md-6 column-lg-4">
-              <div class="sec--img--center">
+              <div class="sec3__rel" data-aos="fade-up-left">
                 <img
                   src="/assets/img/hand-made.jpg"
                   alt=""
                   class="section__img m-b-40"
                 />
-                <div class="">
+                <div class="sec3__img">
                   <img src="./assets/img/hand-made.png" alt="" class="" />
                 </div>
               </div>
-              <div>
+              <div data-aos="fade-left">
                 <p class="sec__sub-title">Hand Made</p>
                 <p class="sec__description text-color--semi--dark">
                   Warned the Little Blind Text, that where it came from it would
@@ -206,17 +226,17 @@
               </div>
             </div>
             <div class="column column-md-6 column-lg-4 d-none-lg">
-              <div class="sec--img--center">
+              <div class="sec3__rel" data-aos="fade-right">
                 <img
                   src="./assets/img/hand-made.jpg"
                   alt=""
                   class="section__img m-b-40"
                 />
-                <div class="">
+                <div class="sec3__img">
                   <img src="./assets/img/hand-made.png" alt="" class="" />
                 </div>
               </div>
-              <div>
+              <div data-aos="fade-right">
                 <p class="sec__sub-title">Hand Made</p>
                 <p class="sec__description text-color--semi--dark">
                   Warned the Little Blind Text, that where it came from it would
@@ -232,9 +252,9 @@
       <section id="section4">
         <div class="container">
           <div class="row">
-            <div class="column">
+            <div class="column" data-aos="fade-right">
               <p class="title__line">Menu</p>
-              <h2 class="sec__title sec__title-lg sec__title-max-w">
+              <h2 class="sec__title sec__title-lg sec-lh sec__title-max-w">
                 Our Delightful Menu Offers
               </h2>
             </div>
@@ -247,7 +267,7 @@
                   <option value="Drinks">Drinks</option>
                 </select>
               </div>
-              <div class="d-none d-block-md">
+              <div class="d-none d-block-md" data-aos="fade-right">
                 <div class="">
                   <p
                     class="
@@ -268,6 +288,7 @@
             <div class="column column-md-9 column-lg-8">
               <div class="d-flex-md m-b-40">
                 <img
+                  data-aos="fade-up-right"
                   src="./assets/img/italian-mushroom.jpg"
                   alt=""
                   class="section__img"
@@ -279,6 +300,7 @@
                     flex-g-1-md
                     justify-c-sb justify-c-sb-md
                   "
+                  data-aos="fade-up-left"
                 >
                   <div class="sec__item__description">
                     <p class="sec__sub-title">Italian Mushroom</p>
@@ -296,6 +318,7 @@
                   src="./assets/img/fried-potato.jpg"
                   alt=""
                   class="section__img"
+                  data-aos="fade-up-right"
                 />
                 <div
                   class="
@@ -304,6 +327,7 @@
                     flex-g-1-md
                     justify-c-sb justify-c-sb-md
                   "
+                  data-aos="fade-up-left"
                 >
                   <div class="sec__item__description">
                     <p class="sec__sub-title">Fried Potatoe Garlic</p>
@@ -317,7 +341,12 @@
                 </div>
               </div>
               <div class="d-flex-md m-b-40">
-                <img src="./assets/img/tuna.jpg" alt="" class="section__img" />
+                <img
+                  src="./assets/img/tuna.jpg"
+                  data-aos="fade-up-right"
+                  alt=""
+                  class="section__img"
+                />
                 <div
                   class="
                     d-flex
@@ -325,6 +354,7 @@
                     flex-g-1-md
                     justify-c-sb justify-c-sb-md
                   "
+                  data-aos="fade-up-left"
                 >
                   <div class="sec__item__description">
                     <p class="sec__sub-title">Tuna Roast Source</p>
@@ -343,6 +373,7 @@
                   src="./assets/img/roast-pork.jpg"
                   alt=""
                   class="section__img"
+                  data-aos="fade-up-right"
                 />
                 <div
                   class="
@@ -351,6 +382,7 @@
                     flex-g-1-md
                     justify-c-sb justify-c-sb-md
                   "
+                  data-aos="fade-up-left"
                 >
                   <div class="sec__item__description">
                     <p class="sec__sub-title">Roast Pork</p>
@@ -368,6 +400,7 @@
                   src="./assets/img/fried-chicken.jpg"
                   alt=""
                   class="section__img"
+                  data-aos="fade-up-right"
                 />
                 <div
                   class="
@@ -376,6 +409,7 @@
                     flex-g-1-md
                     justify-c-sb justify-c-sb-md
                   "
+                  data-aos="fade-up-left"
                 >
                   <div class="sec__item__description">
                     <p class="sec__sub-title">Fried Chicken</p>
@@ -389,11 +423,11 @@
                 </div>
               </div>
 
-              <div class="d-flex justify-c-c">
-                <div class="sec__btn btn--main--border">
-                  <a href="#" class="">Full Menu</a>
+              <a href="#" class="d-flex justify-c-c">
+                <div class="sec__btn btn--1 m-l-btn">
+                  <span class="">full menu</span>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -405,14 +439,23 @@
           <div class="row">
             <div class="column column-md-6 p-0 m-0">
               <div class="section__card text-color--white card-color-main">
-                <h3 class="title__line title__line--white">Delivery</h3>
-                <h2 class="sec__title sec__title-lg">Order Food</h2>
-                <div class="sec__btn btn--white--border">
+                <h3
+                  class="title__line title__line--white"
+                  data-aos="fade-right"
+                >
+                  Delivery
+                </h3>
+
+                <h2 class="sec__title sec__title-lg" data-aos="fade-right">
+                  Order Food
+                </h2>
+
+                <div class="sec__btn btn--white--border" data-aos="fade-right">
                   <a href="#">CONTACT US</a>
                 </div>
               </div>
             </div>
-            <div class="column column-md-6 p-0 m-0">
+            <div class="column column-md-6 p-0 m-0" data-aos="fade-left">
               <div class="">
                 <img
                   src="./assets/img/beef-steak.jpg"
@@ -430,12 +473,16 @@
         <div class="container">
           <div class="row">
             <div class="column column-md-6 column-lg-6 column-xl-6">
-              <div class="sec--img--centersec--img--center">
+              <div
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000"
+              >
                 <img src="./assets/img/chef.jpeg" alt="" class="section__img" />
               </div>
             </div>
             <div class="column column-md-6 column-lg-6 column-xl-6">
-              <div class="p-l-md p-l-xl">
+              <div class="p-l-md p-l-xl" data-aos="fade-left">
                 <h3 class="title__line title__line-xl-40">Our Chef</h3>
                 <h2 class="sec__title sec__title-max-w sec__title-lg">
                   Svyatoslav Taushev
@@ -457,57 +504,67 @@
         <div class="container">
           <div class="row">
             <div class="column">
-              <div class="">
+              <div data-aos="fade-right">
                 <h3 class="title__line">Book a Table</h3>
-                <h2 class="sec__title sec__title-lg">Upcoming Events</h2>
+                <h2 class="sec__title sec__title-lg sec-lh">Upcoming Events</h2>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="column column-md-6 column-lg-4">
-              <div class="sec--img--center img__relative">
+              <div class="img__relative" data-aos="fade-up-right">
                 <img
                   src="./assets/img/event1.jpg"
                   alt=""
                   class="section__img m-b-40"
                 />
-                <p class="sec__sub-title">Valentines Day</p>
-                <p class="sec__description text-color--semi--dark">
-                  The copy warned the Little Blind, where it came from it would
-                  have been.
-                </p>
+                <div data-aos="fade-up" data-aos-duration="800">
+                  <p class="sec__sub-title">Valentines Day</p>
+                  <p class="sec__description text-color--semi--dark">
+                    The copy warned the Little Blind, where it came from it
+                    would have been.
+                  </p>
+                </div>
 
                 <h2 class="sec__title event__text">14 feb</h2>
               </div>
             </div>
             <div class="column column-md-6 column-lg-4 d-none d-block-md">
-              <div class="img__relative">
+              <div
+                class="img__relative"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
                 <img
                   src="./assets/img/event2.jpg"
                   alt=""
                   class="section__img m-b-40"
                 />
-                <p class="sec__sub-title">Superbowl</p>
-                <p class="sec__description text-sec1color--semi--dark">
-                  Little Blind Text, that where it came from it would have been
-                  rewritten.
-                </p>
+                <div data-aos="fade-up" data-aos-duration="800">
+                  <p class="sec__sub-title">Superbowl</p>
+                  <p class="sec__description text-sec1color--semi--dark">
+                    Little Blind Text, that where it came from it would have
+                    been rewritten.
+                  </p>
+                </div>
 
                 <h2 class="sec__title event__text">15 jun</h2>
               </div>
             </div>
             <div class="column column-md-6 column-lg-4 d-none d-block-md">
-              <div class="img__relative">
+              <div class="img__relative" data-aos="fade-up-left">
                 <img
                   src="./assets/img/event3.png"
                   alt=""
                   class="section__img m-b-40"
                 />
-                <p class="sec__sub-title">Anniversary</p>
-                <p class="sec__description text-color--semi--dark">
-                  Text, that where it came from it would have been rewritten a
-                  thousand times.
-                </p>
+                <div data-aos="fade-up" data-aos-duration="800">
+                  <p class="sec__sub-title">Anniversary</p>
+                  <p class="sec__description text-color--semi--dark">
+                    Text, that where it came from it would have been rewritten a
+                    thousand times.
+                  </p>
+                </div>
 
                 <h2 class="sec__title event__text">12 jul</h2>
               </div>
@@ -521,11 +578,14 @@
                   alt=""
                   class="section__img m-b-40"
                 />
-                <p class="sec__sub-title">New Year</p>
-                <p class="sec__description text-color--semi--dark">
-                  Text, that where it came from it would have been rewritten a
-                  thousand times.
-                </p>
+                <div data-aos="fade-up" data-aos-duration="800">
+                  <p class="sec__sub-title">New Year</p>
+                  <p class="sec__description text-color--semi--dark">
+                    Text, that where it came from it would have been rewritten a
+                    thousand times.
+                  </p>
+                </div>
+
                 <h2 class="sec__title event__text">1 jan</h2>
               </div>
             </div>
@@ -543,15 +603,28 @@
                   src="./assets/img/testimonials.jpg"
                   alt=""
                   class="section__img img_circle"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
                 />
-                <p class="sec__sub-title">Scarlett Lawson</p>
-                <p class="sec__description">
+
+                <p
+                  class="sec__sub-title"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  Scarlett Lawson
+                </p>
+                <p
+                  class="sec__description"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   "She packed her seven versalia, put her initial into the belt
                   and made herself on the way. When she reached the first hills
                   of the Italic Mountains, she had a last view back on the
                   skyline"
                 </p>
-                <img src="./assets/img/Group.png" alt="" />
+                <img src="./assets/img/Group.png" alt="" data-aos="fade-up" />
               </div>
             </div>
 
@@ -571,9 +644,14 @@
                   <a href="#"><img src="./assets/img/arrow.png" alt="" /></a>
                 </div>
                 <div class="order-md-1 p-l-md p-l-xl">
-                  <h3 class="title__line">Testimonials</h3>
-                  <h2 class="sec__title sec__title-lg">Customer Reviews</h2>
-                  <p class="sec__description text-color--semi--dark">
+                  <h3 class="title__line" data-aos="fade-left">Testimonials</h3>
+                  <h2 class="sec__title sec__title-lg" data-aos="fade-left">
+                    Customer Reviews
+                  </h2>
+                  <p
+                    class="sec__description text-color--semi--dark"
+                    data-aos="fade-left"
+                  >
                     Separated they live in Bookmarksgrove right at the coast of
                     the Semantics, a large language. Separated they live in
                     Bookmarksgrove right at the coast.
@@ -590,14 +668,17 @@
         <div class="container">
           <div class="row">
             <div class="column">
-              <h3 class="title__line">Blog</h3>
+              <h3 class="title__line" data-aos="fade-right">Blog</h3>
               <div class="m-b-32 d-flex-md justify-c-sb-md align-item-c-md">
                 <div>
-                  <h2 class="sec__title sec__title-lg max-w-189">
+                  <h2
+                    class="sec__title sec__title-lg max-w-189 sec-lh"
+                    data-aos="fade-right"
+                  >
                     Our Articles
                   </h2>
                 </div>
-                <div class="sec__btn btn--main--border">
+                <div class="sec__btn btn--main--border" data-aos="fade-left">
                   <a href="#" class="">See All</a>
                 </div>
               </div>
@@ -610,26 +691,44 @@
                   src="./assets/img/receiption.jpg"
                   alt=""
                   class="section__img"
+                  data-aos="fade-up-right"
                 />
-                <p class="sec__description text-color--semi--dark letter-sp-2">
-                  RECIEPT
-                </p>
-                <p class="sec__sub-title">Slapped cozy a that lightheartedly</p>
-                <p class="sec__description text-color--semi--dark">
-                  24 jun 2020
-                </p>
+                <div data-aos="fade-right">
+                  <p
+                    class="sec__description text-color--semi--dark letter-sp-2"
+                  >
+                    RECIEPT
+                  </p>
+                  <p class="sec__sub-title">
+                    Slapped cozy a that lightheartedly
+                  </p>
+                  <p class="sec__description text-color--semi--dark">
+                    24 jun 2020
+                  </p>
+                </div>
               </div>
             </div>
             <div class="column column-md-6 column-lg-3">
               <div>
-                <img src="./assets/img/food.jpg" alt="" class="section__img" />
-                <p class="sec__description text-color--semi--dark letter-sp-2">
-                  FOOD
-                </p>
-                <p class="sec__sub-title">On deer horse aboard tritely yikes</p>
-                <p class="sec__description text-color--semi--dark">
-                  15 jun 2020
-                </p>
+                <img
+                  src="./assets/img/food.jpg"
+                  alt=""
+                  class="section__img"
+                  data-aos="fade-up-right"
+                />
+                <div data-aos="fade-right">
+                  <p
+                    class="sec__description text-color--semi--dark letter-sp-2"
+                  >
+                    FOOD
+                  </p>
+                  <p class="sec__sub-title">
+                    On deer horse aboard tritely yikes
+                  </p>
+                  <p class="sec__description text-color--semi--dark">
+                    15 jun 2020
+                  </p>
+                </div>
               </div>
             </div>
             <div class="column column-md-6 column-lg-3">
@@ -638,16 +737,21 @@
                   src="./assets/img/restaurant.jpg"
                   alt=""
                   class="section__img"
+                  data-aos="fade-up-left"
                 />
-                <p class="sec__description text-color--semi--dark letter-sp-2">
-                  RESTAURANT
-                </p>
-                <p class="sec__sub-title">
-                  Last view back on the skyline of her
-                </p>
-                <p class="sec__description text-color--semi--dark">
-                  12 jun 2020
-                </p>
+                <div data-aos="fade-left">
+                  <p
+                    class="sec__description text-color--semi--dark letter-sp-2"
+                  >
+                    RESTAURANT
+                  </p>
+                  <p class="sec__sub-title">
+                    Last view back on the skyline of her
+                  </p>
+                  <p class="sec__description text-color--semi--dark">
+                    12 jun 2020
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -657,16 +761,21 @@
                   src="./assets/img/delivery.jpg"
                   alt=""
                   class="section__img"
+                  data-aos="fade-up-left"
                 />
-                <p class="sec__description text-color--semi--dark letter-sp-2">
-                  DELIVERY
-                </p>
-                <p class="sec__sub-title">
-                  Pityful a rethoric question ran over
-                </p>
-                <p class="sec__description text-color--semi--dark">
-                  30 may 2020
-                </p>
+                <div data-aos="fade-left">
+                  <p
+                    class="sec__description text-color--semi--dark letter-sp-2"
+                  >
+                    DELIVERY
+                  </p>
+                  <p class="sec__sub-title">
+                    Pityful a rethoric question ran over
+                  </p>
+                  <p class="sec__description text-color--semi--dark">
+                    30 may 2020
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -685,6 +794,7 @@
                   card-color-main
                   text-color--white
                 "
+                data-aos="fade-right"
               >
                 <p class="title__line title__line--white">Appointment</p>
                 <h2 class="sec__title sec__title-md sec__title-lg-48">
@@ -702,6 +812,7 @@
                   right__card
                   text-color--default
                 "
+                data-aos="fade-left"
               >
                 <h3 class="title__line">Delivery</h3>
                 <h2 class="sec__title sec__title-lg">Order Now</h2>
@@ -725,25 +836,35 @@
               <div>
                 <h2 class="m-b-32 letter-sp-2">MENU</h2>
                 <ul class="menu__link">
-                  <li><a href="" class="footer__links">About</a></li>
-                  <li><a href="" class="footer__links">Menu</a></li>
-                  <li><a href="" class="footer__links">Blog</a></li>
-                  <li><a href="" class="footer__links">Contact</a></li>
+                  <li><a href="" class="footer__links btn--m-w-f">About</a></li>
+                  <li><a href="" class="footer__links btn--s-w-f">Menu</a></li>
+                  <li><a href="" class="footer__links btn--s-w-f">Blog</a></li>
+                  <li>
+                    <a href="" class="footer__links btn--l-w-f">Contact</a>
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="column column-md-3">
               <h2 class="m-b-32 letter-sp-2">SERVICE</h2>
               <ul class="service__links">
-                <li><a href="" class="footer__links">Food</a></li>
-                <li><a href="" class="footer__links">Delivery</a></li>
-                <li><a href="" class="footer__links">Catering</a></li>
-                <li><a href="" class="footer__links">Book</a></li>
+                <li><a href="" class="footer__links btn--s-w-f">Food</a></li>
+                <li>
+                  <a href="" class="footer__links btn--l-w-f">Delivery</a>
+                </li>
+                <li>
+                  <a href="" class="footer__links btn--l-w-f">Catering</a>
+                </li>
+                <li><a href="" class="footer__links btn--s-w-f">Book</a></li>
               </ul>
             </div>
             <div class="column column-md-3">
               <h2 class="m-b-36 letter-sp-2">SOCIAL</h2>
-              <img src="./assets/img/social.png" alt="" class="socaial__icon" />
+              <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
             </div>
           </div>
           <div class="footer__line"></div>
@@ -772,6 +893,21 @@
           </div>
         </div>
       </footer>
+      <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+        }
+        </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <script>
+        AOS.init({ offset: 200, delay: 200 });
+      </script>
     </body>
   </html>
 </html>
