@@ -18,12 +18,20 @@
 .max-w{
   max-width: 300px;
 }
+@media screen and (min-width:375px) {
+  .sec__title-sm{
+    font-size: 40px !important;
+  }
+}
 @media screen and (min-width: 560px) {
   .max-w{
     max-width: 400px;
   }
   .p-l-sm{
     padding-left: 50px;
+  }
+  .sec__title-sm{
+    font-size: 48px !important;
   }
 } 
 @media screen and (min-width: 768px) {
@@ -64,12 +72,11 @@
   }
   .sec__title-lg {
     font-size: 48px !important;
-    
   }
   .sec-lh{
     line-height: 64px !important;
   }
-  .sec__title-lg-48 {
+  .sec__title-lg-40 {
     font-size: 40px !important;
   }
   .sec__price {
@@ -95,6 +102,9 @@
   }
   .sec__price {
     font-size: 40px !important;
+  }
+  .sec__title-xl-48 {
+    font-size: 48px !important;
   }
 }
 .hero__title{

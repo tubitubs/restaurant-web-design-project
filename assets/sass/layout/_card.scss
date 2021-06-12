@@ -100,4 +100,29 @@
   .section__card{
     padding: 48px !important;
   }
+
 }
+#section10{
+    .left__card{
+      padding: 75px 0px 90px 50px;
+    }
+    .right__card{
+      padding: 75px 0px 90px 50px;
+    }
+  @media screen and (min-width: 768px) {
+    .left__card{
+      padding: 75px 0px 60px 50px !important;
+    }
+    .right__card{
+      padding: 75px 0px 73px 50px !important;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .left__card{
+      padding: 75px 0px 60px 100px !important;
+    }
+    .right__card{
+      padding: 75px 0px 79px 100px !important;
+    }
+  }
+} 

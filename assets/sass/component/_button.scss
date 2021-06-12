@@ -1,196 +1,75 @@
-
-.hero__btn{
-    background: $FOURTH-COLOR;
-    padding: 14px 38px;
-    color: $COLOR-WHITE;
-    max-width: 150px;
-}
-span-w{
-    width: 100%;
-    max-width: 150px;
-  
-}
-.btn--1{
-   text-transform: uppercase; 
-   background-color: $MAIN-COLOR; 
-   width: 100%;
-   max-width: 150px;
-   padding: 14px;
-   border: 1px solid ; 
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    span {
-        position: relative;
-        display: block;
-        cursor: pointer;
-        color: white;
-      }
-      
-      span:before, span :after {
-        content: '';
-        position: absolute;
-        width: 0%;
-        height: 3px;
-        top: 50%;
-        margin-top: -0.5px;
-        background: #fff;
-      }
-      
-  
-      span:after {
-        right: 2.5px;
-        background: #fff;
-        transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-      }
-      
-      span:hover:before {
-        background: #fff;
-        width: 100%;
-        transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-      }
-      
-      span:hover:after {
-        background: transparent;
-        width: 100%;
-        transition: 0s;
-      }
-}  
-
-
-
-.btn--2{
-    text-transform: uppercase; 
-    background-color: $FOURTH-COLOR; 
-    width: 100%;
-    max-width: 150px !important;
-    padding: 14px;
-    border: 1px solid ; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     span{
-         
-         position: relative;
-         display: block;
-         cursor: pointer;
-         color: white;
-       }
-       
-       span:before, span:after {
-         content: '';
-         position: absolute;
-         width: 0%;
-         height: 3px;
-         top: 50%;
-         margin-top: -0.5px;
-         background: #fff;
-       }
-       
-       span:before {
-         left: 0;
-       }
-       span:after {
-         right: 2.5px;
-         background: #fff;
-         transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-       }
-       
-       span:hover:before {
-         background: #fff;
-         width: 100%;
-         transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-       }
-       
-       span:hover:after {
-         background: transparent;
-         width: 100%;
-         transition: 0s;
-       }
- }  
-
- .btn--3{
-    text-transform: uppercase; 
-    background-color: $MAIN-COLOR; 
-    width: 100%;
-    max-width: 150px;
-    padding: 14px;
-    border: 1px solid ; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     span {
-         position: relative;
-         display: block;
-         cursor: pointer;
-         color: white;
-       }
-       
-       span:before, span :after {
-         content: '';
-         position: absolute;
-         width: 0%;
-         height: 3px;
-         top: 50%;
-         margin-top: -0.5px;
-         background: #fff;
-       }
-       
-   
-       span:after {
-         right: 2.5px;
-         background: #fff;
-         transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-       }
-       
-       span:hover:before {
-         background: #fff;
-         width: 100%;
-         transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-       }
-       
-       span:hover:after {
-         background: transparent;
-         width: 100%;
-         transition: 0s;
-       }
- }  
+.btn {
+  padding: 13px 28px;
+  cursor: pointer;
+  text-transform: uppercase;
  
+}
+.btn:hover{
+  background-color: rgb(5, 53, 44) ;
+  color: $COLOR-WHITE;
+  transition: .4s ease-in-out;
+}
+.btn-1 {
+  background-color: transparent;
+  color: $COLOR-WHITE;
+}
+
+.btn-2 {
+  background-color: $MAIN-COLOR;
+  color: $COLOR-WHITE;
+}
+
+.btn-3 {
+  background-color: $FOURTH-COLOR;
+  color: $COLOR-WHITE;
+  border: none;
+}
+.btn-4 {
+  color: $MAIN-COLOR;
+  border: 1px solid $MAIN-COLOR;
+  background-color: transparent;
+}
+
+.btn-5 {
+  color: $COLOR-WHITE;
+  border: 1px solid $COLOR-WHITE;
+  background-color: transparent;
+}
 
 
+.icon__links{
+  padding: 16px;
+  border: none;
+  border-radius: 50%;
+  margin-right: 1rem;
+  color: $COLOR-WHITE;
+  cursor: pointer;
+  background-color: $FOURTH-COLOR;
+}
+
+.icon__fb:hover{
+  background-color: #0d8cf1 ;
+  color: $COLOR-WHITE;
+}
+.icon__insta:hover{
+  background-color: #2C6A93; ;
+  color: $COLOR-WHITE;
+}
+.icon__twit:hover{
+  background-color: #00B6F1 ;
+  color: $COLOR-WHITE;
+}
+.burger-menu{
+  background-color: $FOURTH-COLOR;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: $COLOR-WHITE;
+  border: none;
+  cursor: pointer;
+}
+.burger-menu:hover{
+  background-color: $FOURTH-COLOR;
+  background-color: rgb(5, 53, 44) ;
   
- 
-
-
-
-
-.btn-color{
-    color: $MAIN-COLOR;
-}
-.btn--main--border{
-   background-color: $COLOR-WHITE; 
-   width: 100%;
-   max-width: 150px;
-   padding: 14px;
-   border: 1px solid $BTN-COLOR; 
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    a{
-    color: $MAIN-COLOR;
-    }
-}
-.btn--white--border{
-    background-color: $MAIN-COLOR; 
-   width: 100%;
-   max-width: 150px;
-   padding: 14px;
-   border: 1px solid white; 
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    a{
-        color: $COLOR-WHITE;
-    }
-
 }

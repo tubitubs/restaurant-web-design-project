@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="https://kit.fontawesome.com/53e645ac4b.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
@@ -19,27 +20,27 @@
   </head>
   <html>
     <body>
-      <header id="header" class="d-none-nav">
+      <header id="header">
         <nav id="navbar" class="navigation">
           <div class="container">
-            <div id="navbar" class="nav d-flex justify-c-sb">
+            <div class="nav d-flex justify-c-sb">
               <ul class="nav__list">
                 <li>
                   <a href="#" class="nav__links"
                     ><img src="./assets/img/RST.png" alt="" class="logo"
                   /></a>
                 </li>
-                <li><a href="#" class="nav__links">About</a></li>
-                <li><a href="#" class="nav__links">Menu</a></li>
-                <li><a href="#" class="nav__links">Blog</a></li>
-                <li><a href="#" class="nav__links">Contact</a></li>
+                <li class="d-none-nav"><a href="#section1" class="nav__links">About</a></li>
+                <li class="d-none-nav"><a href="#section4" class="nav__links">Menu</a></li>
+                <li class="d-none-nav"><a href="#section9" class="nav__links">Blog</a></li>
+                <li class="d-none-nav"><a href="#section10" class="nav__links">Contact</a></li>
               </ul>
               <div>
-                <a href="#">
-                  <div class="btn--1 nav__links">
-                    <span>About Us</span>
-                  </div>
-                </a>
+                <button type="submit" class="burger-menu d-none-lg" >
+                  <img src="./assets/img/burger-menu.png" alt=""/>
+                </button>
+                
+                <button type="submit" class="btn btn-1 d-none-nav">appointment</button>
               </div>
             </div>
           </div>
@@ -52,7 +53,9 @@
           <div class="row">
             <div class="column column-lg-6">
               <div class="d-flex p-0 align-item-c h-50-md h-100-lg">
-                <div class="text-color--white">
+                <div class="text-color--white" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">
                   <p class="title__line title__line--white">Restaurant</p>
                   <h1
                     class="
@@ -63,11 +66,7 @@
                   >
                     Top Service Cuisine
                   </h1>
-                  <a href="#" class="btn--2-w">
-                    <div class="btn--2">
-                      <span class="">See Menu</span>
-                    </div>
-                  </a>
+                  <button type="submit" class="btn btn-3">see menu</button>
                 </div>
               </div>
             </div>
@@ -106,9 +105,7 @@
                 </p>
                 <div>
                   <a href="#">
-                    <div class="btn--1 nav__links">
-                      <span>About Us</span>
-                    </div>
+                    <button type="submit" class="btn btn-2">about us</button>
                   </a>
                 </div>
               </div>
@@ -168,11 +165,11 @@
           </div>
           <div class="row">
             <div class="column column-md-6 column-lg-4">
-              <div class="sec3__rel" data-aos="fade-up-right">
+              <div class="" data-aos="fade-up-right">
                 <img
                   src="./assets/img/fresh-ingredients.jpg"
                   alt=""
-                  class="section__img m-b-40"
+                  class="section__img m-b-40 sec3__rel"
                 />
                 <div class="sec3__img">
                   <img src="./assets/img/fish.png" alt="" class="" />
@@ -205,27 +202,7 @@
                 </p>
               </div>
             </div>
-
             <div class="column column-md-6 column-lg-4">
-              <div class="sec3__rel" data-aos="fade-up-left">
-                <img
-                  src="/assets/img/hand-made.jpg"
-                  alt=""
-                  class="section__img m-b-40"
-                />
-                <div class="sec3__img">
-                  <img src="./assets/img/hand-made.png" alt="" class="" />
-                </div>
-              </div>
-              <div data-aos="fade-left">
-                <p class="sec__sub-title">Hand Made</p>
-                <p class="sec__description text-color--semi--dark">
-                  Warned the Little Blind Text, that where it came from it would
-                  have been rewritten a thousand times.
-                </p>
-              </div>
-            </div>
-            <div class="column column-md-6 column-lg-4 d-none-lg">
               <div class="sec3__rel" data-aos="fade-right">
                 <img
                   src="./assets/img/hand-made.jpg"
@@ -422,12 +399,9 @@
                   </div>
                 </div>
               </div>
-
-              <a href="#" class="d-flex justify-c-c">
-                <div class="sec__btn btn--1 m-l-btn">
-                  <span class="">full menu</span>
-                </div>
-              </a>
+              <div class="d-flex justify-c-c">
+                <button type="submit" class="btn btn-4">Full Menu</button>
+              </div>
             </div>
           </div>
         </div>
@@ -450,9 +424,9 @@
                   Order Food
                 </h2>
 
-                <div class="sec__btn btn--white--border" data-aos="fade-right">
-                  <a href="#">CONTACT US</a>
-                </div>
+                <button type="submit" class="btn btn-5" data-aos="fade-right">
+                  Full Menu
+                </button>
               </div>
             </div>
             <div class="column column-md-6 p-0 m-0" data-aos="fade-left">
@@ -562,7 +536,7 @@
                   <p class="sec__sub-title">Anniversary</p>
                   <p class="sec__description text-color--semi--dark">
                     Text, that where it came from it would have been rewritten a
-                    thousand times.
+                    thousand times
                   </p>
                 </div>
 
@@ -572,7 +546,7 @@
             <div
               class="column column-md-6 column-lg-4 d-none-lg d-none d-block-md"
             >
-              <div class="img__relative">
+              <div class="img__relative" data-aos="fade-up-right">
                 <img
                   src="./assets/img/new-year.jpg"
                   alt=""
@@ -624,7 +598,12 @@
                   of the Italic Mountains, she had a last view back on the
                   skyline"
                 </p>
-                <img src="./assets/img/Group.png" alt="" data-aos="fade-up" />
+                <img
+                  src="./assets/img/Group.png"
+                  alt=""
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
               </div>
             </div>
 
@@ -643,7 +622,7 @@
                 >
                   <a href="#"><img src="./assets/img/arrow.png" alt="" /></a>
                 </div>
-                <div class="order-md-1 p-l-md p-l-xl">
+                <div class="order-md-1 p-l-md p-l-xl mt-50-md">
                   <h3 class="title__line" data-aos="fade-left">Testimonials</h3>
                   <h2 class="sec__title sec__title-lg" data-aos="fade-left">
                     Customer Reviews
@@ -678,9 +657,7 @@
                     Our Articles
                   </h2>
                 </div>
-                <div class="sec__btn btn--main--border" data-aos="fade-left">
-                  <a href="#" class="">See All</a>
-                </div>
+                <button type="submit" class="btn btn-4">see all</button>
               </div>
             </div>
           </div>
@@ -788,16 +765,19 @@
           <div class="row">
             <div class="column column-md-6 p-0 m-0">
               <div
-                class="
-                  section__card
-                  left__card
-                  card-color-main
-                  text-color--white
-                "
+                class="left__card card-color-main text-color--white"
                 data-aos="fade-right"
               >
                 <p class="title__line title__line--white">Appointment</p>
-                <h2 class="sec__title sec__title-md sec__title-lg-48">
+                <h2
+                  class="
+                    sec__title
+                    sec__title-sm
+                    sec__title-md
+                    sec__title-lg-40
+                    sec__title-xl-48
+                  "
+                >
                   +1 (234) 567-89-02
                 </h2>
                 <p class="sec__description--xs">Opening Hours</p>
@@ -806,19 +786,12 @@
             </div>
             <div class="column column-md-6 p-0 m-0">
               <div
-                class="
-                  section__card
-                  color-card-default
-                  right__card
-                  text-color--default
-                "
+                class="color-card-default right__card text-color--default"
                 data-aos="fade-left"
               >
                 <h3 class="title__line">Delivery</h3>
                 <h2 class="sec__title sec__title-lg">Order Now</h2>
-                <div class="sec__btn btn--main--border">
-                  <a href="#">Contact Us</a>
-                </div>
+                <button type="submit" class="btn btn-4">Contact us</button>
               </div>
             </div>
           </div>
@@ -860,10 +833,10 @@
             </div>
             <div class="column column-md-3">
               <h2 class="m-b-36 letter-sp-2">SOCIAL</h2>
-              <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+              <ul class="icons">
+                <li><button class="icon__links icon__fb" type="submit"><i class="fab fa-facebook"></i></button></li>
+                <li><button class="icon__links icon__twit" type="submit"><i class="fab fa-twitter"></i></button></li>
+                <li><button class="icon__links icon__insta" type="submit"><i class="fab fa-instagram"></i></button></li>
               </ul>
             </div>
           </div>
@@ -894,15 +867,20 @@
         </div>
       </footer>
       <script>
-        window.onscroll = function() {scrollFunction()};
+        window.onscroll = function () {
+          scrollFunction();
+        };
         function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20 
+          ) {
             document.getElementById("navbar").style.top = "0";
           } else {
-            document.getElementById("navbar").style.top = "-50px";
+            document.getElementById("navbar").style.top = "-100px";
           }
         }
-        </script>
+      </script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
       <script>

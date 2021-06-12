@@ -65,7 +65,7 @@
 .m-l-t{
     padding-left: 40px;
 }
-@media screen and (max-width: 768px){ 
+@media screen and (max-width: 992px){ 
     .d-none-nav{
         display: none;
     }
@@ -73,6 +73,9 @@
 @media screen and (min-width: 768px){  
     .m-l-md{
         margin-left: 40px;
+    }
+    .mt-50-md{
+        margin-top: 50px;
     }
     .justify-c-f-s-md{
         justify-content: flex-start;
